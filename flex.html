@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>布局试验</title>
+  <style>
+    body {
+      margin: 0px;
+      height: 100vh;
+      background-color: #eee;
+    }
+
+    /*  *{
+      border: 1px black solid
+    }  */
+
+    .yinying {
+      box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .flex1 {
+      flex: 1;
+    }
+
+    .mg8 {
+      margin: 8px;
+    }
+
+    .mgr8 {
+      margin-right: 8px;
+    }
+
+    .mgt8 {
+      margin-top: 8px;
+    }
+
+    .column {
+      flex-direction: column;
+    }
+
+    .baise {
+      background-color: white;
+    }
+
+    .daohang {
+      padding: 10px 20px;
+      border-bottom: 1px solid green;
+      height: 40px;
+      font-size: 14px;
+      color: #042c16
+    }
+
+    @media (max-width: 600px) {
+      .cebian {
+        display: none
+      }
+
+      .neirong {
+        flex-direction: column;
+      }
+
+      .shujuqu {
+        flex-direction: column;
+      }
+
+      .youqu {
+        margin-left: 8px;
+      }
+
+      .shuju {
+        margin: 0 0 8px
+      }
+    }
+  </style>
+</head>
+
+<body class="flex">
+  <!-- 侧边栏 -->
+  <div style="width: 200px; z-index: 1;" class="baise cebian">
+    <!-- 头像栏 -->
+    <div
+      style="padding: 10px; height: 40px; align-items: center; justify-content: center; border-bottom: 1px solid #b2b1b1;"
+      class="flex">
+      <img src="./五更琉璃.png" alt="五更琉璃" wight="40px" height="40px" />
+      <div style="margin-left: 10px;">阮京亿</div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="flex1">
+      <div class="daohang">导航</div>
+      <div class="daohang">导航</div>
+      <div class="daohang">导航</div>
+      <div class="daohang">导航</div>
+      <div class="daohang">导航</div>
+      <div class="daohang">导航</div>
+    </div>
+  </div>
+  <!-- 主区域 -->
+  <div class="flex1 flex column ">
+    <!-- 头部栏 -->
+    <div class="baise yinying" style="height: 60px; z-index: 1;border-left: 1px solid #b2b1b1;"></div>
+    <!-- 内容区 -->
+    <div style="overflow: auto;" class="flex1 flex neirong">
+      <!-- 左区 -->
+      <div style="flex: 3" class="flex column mg8">
+        <!-- 数据区 -->
+        <div class="flex ">
+          <!-- 数据块 -->
+          <div style="height: 100px" class="shuju baise flex1 mgr8 yinying"></div>
+          <div style="height: 100px" class="shuju baise flex1 mgr8 yinying"></div>
+          <div style="height: 100px" class="shuju baise flex1 mgr8 yinying"></div>
+          <div style="height: 100px" class="shuju baise flex1 yinying"></div>
+        </div>
+        <!-- 列表区 -->
+        <div class="flex column">
+          <!-- 列表项 -->
+          <div style="height: 160px" class="baise mgt8 yinying"></div>
+          <div style="height: 160px" class="baise mgt8 yinying"></div>
+          <div style="height: 160px" class="baise mgt8 yinying"></div>
+          <div style="height: 160px" class="baise mgt8 yinying"></div>
+        </div>
+      </div>
+      <!-- 右区 -->
+      <div style="flex: 1" class="youqu flex column mgt8 mgr8">
+        <!-- 提示区 -->
+        <div style="height: 150px;" class="baise yinying"></div>
+        <!-- 消息区 -->
+        <div style="height: 300px;" class="baise mgt8 yinying"></div>
+        <!-- 消息区 -->
+        <div style="height: 300px;" class="baise mgt8 yinying"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
