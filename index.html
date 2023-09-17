@@ -1,86 +1,66 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>阮京亿的测试网站</title>
-    <link rel="stylesheet" type="text/css" href="D:/Desktop/index.css" />
-    <style>
-      body {
-        margin: 0px;
-      }
-
-      #one {
-        max-width: 0 auto;
-        margin: 0 auto;
-      }
-
-      .yoru {
-        color: yellow;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div
-      id="one"
-      style="
-        background-color: #393939;
-        text-align: center;
-        padding: 30px;
-        color: #8c8027;
-        border: firebrick;
-      "
-    >
-      <img
-        src="./鲤鱼打挺.png"
-        alt="五更琉璃"
-        wight="100px"
-        height="100px"
-        usemap="233"
-      />
-      <map name="233">
-        <area
-          shape="circle"
-          coords="value"
-          href="https://www.bilibili.com/video/BV1Du4y167PS?vd_source=a179a843fa869608400fadbb2493ce90"
-          alt="Sun"
-        />
-      </map>
-      <h1>欢迎</h1>
-      <p><b>试一下</b></p>
-    </div>
-
-    <div
-      style="
-        max-height: 300px;
-        text-align: center;
-        padding: 30px;
-        background-color: #aeaaae;
-      "
-    >
-      <audio controls>
-        <source src="./鲤鱼打挺.aac" />
-        不支持此文件类型！
-      </audio>
-      <p><b>内容变更</b></p>
-      <p><b>内容变更</b></p>
-      <p><b>内容变更</b></p>
-      <p><b>内容变更</b></p>
-    </div>
-
-    <div
-      style="
-        background-color: #737373;
-        text-align: center;
-        padding: 80px;
-        color: rgb(103, 18, 75);
-      "
-    >
-      <h3>这是我的世界</h3>
-      <a href="https://space.bilibili.com/327017585?spm_id_from=333.1007.0.0"
-        >点击进入</a
-      >
-    </div>
-  </body>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>阮京亿的测试网站</title>
+ </head>
+ <body
+  style="
+   margin: 0px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+  "
+ >
+  <touxianglan
+   style="
+    width: 100%;
+    height: 200px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   "
+  >
+   <img src="./五更琉璃.png" alt="五更琉璃" wight="100px" height="100px" />
+  </touxianglan>
+  <zhuneirong
+   style="
+    display: flex;
+    padding: 30px;
+    max-width: 700px;
+    min-height: 70vh;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   "
+  >
+   <audio controls><source src="./鲤鱼打挺.aac" /></audio>
+   <img src="./鲤鱼打挺.png" alt="鲤鱼打挺" wight="100px" height="100px" />
+   <p><b>这里是</b></p>
+   <p><b>阮京亿</b></p>
+   <p><b>的</b></p>
+   <p><b>测试网站</b></p>
+  </zhuneirong>
+  <dibulan
+   style="
+    width: 100%;
+    height: 160px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   "
+  >
+   <p>这里是我的世界</p>
+   <a href="https://space.bilibili.com/327017585?spm_id_from=333.1007.0.0"
+    >点击进入</a
+   >
+  </dibulan>
+ </body>
 </html>
